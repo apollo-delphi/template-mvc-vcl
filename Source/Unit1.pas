@@ -1,4 +1,4 @@
-unit vMain;
+unit Unit1;
 
 interface
 
@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Apollo_MVC_VCL;
 
 type
-  TViewMain = class(TViewVCLBase)
+  TvfMain = class(TViewVCLBase)
   private
     { Private declarations }
   public
@@ -15,7 +15,7 @@ type
   end;
 
 var
-  ViewMain: TViewMain;
+  vfMain: TvfMain;
 
 implementation
 

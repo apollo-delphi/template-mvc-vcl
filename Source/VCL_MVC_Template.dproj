@@ -103,7 +103,12 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="vMain.pas">
-            <Form>Form1</Form>
+            <Form>ViewMain</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="..\Vendors\Apollo_MVC_Core\Apollo_MVC_Core.pas"/>
+        <DCCReference Include="..\Vendors\Apollo_MVC_VCL\Apollo_MVC_VCL.pas">
+            <Form>ViewVCLBase</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Release">
@@ -132,7 +137,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="3">
-                <DeployFile LocalName="Win32\Debug\VCL_MVC_Template.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="..\BIN\Win32\Debug\VCL_MVC_Template.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>VCL_MVC_Template.exe</RemoteName>
                         <Overwrite>true</Overwrite>

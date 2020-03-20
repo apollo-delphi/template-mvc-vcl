@@ -2,7 +2,9 @@ program VCL_MVC_Template;
 
 uses
   Vcl.Forms,
-  vMain in 'vMain.pas' {Form1};
+  vMain in 'vMain.pas' {ViewMain},
+  Apollo_MVC_Core in '..\Vendors\Apollo_MVC_Core\Apollo_MVC_Core.pas',
+  Apollo_MVC_VCL in '..\Vendors\Apollo_MVC_VCL\Apollo_MVC_VCL.pas' {ViewVCLBase};
 
 {$R *.res}
 
@@ -13,6 +15,6 @@ begin
 
   Application.Initialize;
   Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TViewMain, ViewMain);
   Application.Run;
 end.
