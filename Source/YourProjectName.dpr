@@ -1,10 +1,9 @@
-program VCL_MVC_Template;
+program YourProjectName;
 
 uses
   Vcl.Forms,
-  vMain in 'vMain.pas' {ViewMain},
-  Apollo_MVC_Core in '..\Vendors\Apollo_MVC_Core\Apollo_MVC_Core.pas',
-  Apollo_MVC_VCL in '..\Vendors\Apollo_MVC_VCL\Apollo_MVC_VCL.pas' {ViewVCLBase};
+  cController in 'cController.pas',
+  vMain in 'vMain.pas' {ViewMain};
 
 {$R *.res}
 

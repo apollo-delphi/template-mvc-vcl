@@ -1,7 +1,10 @@
 *.local
-*.res
 *.identcache
+*.res
 *.stat
+*.tvsconfig
 __history
-DCU
+__recovery
 BIN
+DCU
+Vendors

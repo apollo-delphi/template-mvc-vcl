@@ -3,15 +3,24 @@ unit vMain;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Apollo_MVC_VCL;
+  Apollo_MVC_Core,
+  Apollo_MVC_VCL,
+  System.Classes,
+  System.SysUtils,
+  System.Variants,
+  Vcl.Controls,
+  Vcl.Dialogs,
+  Vcl.Forms,
+  Vcl.Graphics,
+  Winapi.Messages,
+  Winapi.Windows;
 
 type
-  TViewMain = class(TViewVCLBase)
+  TViewMain = class(TViewVCLMain)
   private
-    { Private declarations }
+  protected
+    procedure LinkToController(out aController: TControllerAbstract); override;
   public
-    { Public declarations }
   end;
 
 var
@@ -20,5 +29,15 @@ var
 implementation
 
 {$R *.dfm}
+
+uses
+  cController;
+
+{ TViewMain }
+
+procedure TViewMain.LinkToController(out aController: TControllerAbstract);
+begin
+  aController := Controller;
+end;
 
 end.
