@@ -6,8 +6,10 @@ uses
   Apollo_MVC_Core;
 
 type
+{$M+}
   TController = class(TControllerAbstract)
   end;
+{$M-}
 
 var
   Controller: TController;

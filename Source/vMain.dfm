@@ -6,7 +6,7 @@ object ViewMain: TViewMain
   ClientWidth = 624
   Color = clBtnFace
   OldCreateOrder = False
-  Position = poDesigned
+  Position = poOwnerFormCenter
   PixelsPerInch = 96
   TextHeight = 13
 end
