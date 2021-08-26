@@ -37,7 +37,7 @@ uses
 
 procedure TViewMain.LinkToController(out aController: TControllerAbstract);
 begin
-  aController := Controller;
+  aController := gController;
 end;
 
 end.

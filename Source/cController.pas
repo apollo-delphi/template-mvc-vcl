@@ -12,14 +12,14 @@ type
 {$M-}
 
 var
-  Controller: TController;
+  gController: TController;
 
 implementation
 
 initialization
-  Controller := TController.Create;
+  gController := TController.Create;
 
 finalization
-  Controller.Free;
+  gController.Free;
 
 end.
